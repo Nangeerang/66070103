@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function setusername() {
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value; + "'s Gallery"
+        }
+
+        function setprofile() {
+            document.getElementById("profileImg").style.backgroundImage = "url(" + document.getElementById("profileimg").value + ")";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avartar">
+            <div class="profile-img" id="profileImg"></div>
+            <div class="noti">8</div>
+        </div>
+        <div class="username">
+            <a href="" class="on-hover">
+                <p style="font-size: x-large; font-weight: 600;" id="username-p">nangee</p>
+            </a>
+        </div>
+        <div class="input-group">
+            <div><label style="font-weight: 400;">Username</label>
+                <input style="margin-left:10px ;" type="text" id="username"><button style="margin-left: 10px;" id="setusername" onclick="setusername()">Apply</button>
+            </div>
+            <div><label style="font-weight: 400;">Profile-Image</label>
+                <input style="margin-left: 10px;" type="text"id="profileimg"><button style="margin-left: 10px;" id="setprofile" onclick="setprofile()">Apply</button>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span" style="background-image: url(https://hips.hearstapps.com/hmg-prod/images/womanyellingcat-1573233850.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIE2Lcmdg3cD-7MR9wjwOO81cp7Lisx2b2Ww&usqp=CAU);"></div>
+            <div class="gallery-item" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRypYu1_b0GSLaeO6NbEbpf0UMPOOkxkTmlvw&usqp=CAU);"></div>
+            <div class="gallery-item" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSid9PrrsIvoKdYcA2Cmpo0KQ2UICjPn8Gsmg&usqp=CAU);"></div>
+            <div class="gallery-item row-span" style="background-image: url(https://i.chzbgr.com/full/9771707136/hA96B3A96/cat-guys-have-bad-news-theronswag-woke-up-again);"></div>
+            <div class="gallery-item" style="background-image: url(https://preview.redd.it/r3lcc7gf64791.png?width=540&format=png&auto=webp&s=9d32ec46f884486fd59dfd01453bf5d07bf30d75);"></div>
+            <div class="gallery-item" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRefctvYl9IBmpSkaHxz_0WRU_5osSmgxyzA&usqp=CAU);"></div>
+            <div class="gallery-item" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR52ZDhWtXdvaSzEYkmUb5bY13XQjtHojRp4QagZWHr0boChGulDs_ANwWyXdzhNbWb5UM&usqp=CAU);"></div>
+            <div class="gallery-item" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMFai9d3lFcWIKIy6VgdXdnII2S1ImlTwjNw&usqp=CAU);"></div>
+            <div class="gallery-item " style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe2h5aliPpPNtYfRBtFtGHtnveftWz6Rea1Q&usqp=CAU);"></div>
+            <div class="gallery-item" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcX67-C0dHTopekGQjQZ7K4vu7fy7yU5QnFg&usqp=CAU);"></div>
+            <div class="gallery-item" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSL7V1QkiYTLCj891n6Nhjb-LtnWLRqVvvqw&usqp=CAU);"></div>
+        </div>
+    </div>
+</body>
+
+</html>
